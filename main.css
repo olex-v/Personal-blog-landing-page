@@ -1,0 +1,148 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Antic Slab', serif;
+    background-color: #f6f6f6;
+}
+div, p{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 240px;
+    position: relative;
+    z-index: 1;
+}
+header h1, header h2{
+    margin: 0 auto;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 189px;
+    line-height: 136px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 60px;
+    font-stretch: ultra-expanded;
+    font-weight: 400;
+    color: #273D46;
+    opacity: .1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+header h2{
+    text-align: center;
+    background-color: #80B7B3;
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 60px;
+    width: 215px;
+    padding: 42px 42px 29px;
+    z-index: 2;
+}
+/* nav bar */
+nav{
+    position: absolute;
+    top: 0;
+    margin: 106px 0 0 148px;
+}
+.visuallyHidden {
+    display: none;
+}
+.hamburger {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.hamburger .bar1, .hamburger .bar2, .hamburger .bar3, .hamburger .bar4 {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #939EA2;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+.bar1 {
+    top: 0;
+}
+.bar2,.bar3 {
+    top: 13.5px;
+}
+.bar3 {
+    right: 0;
+}
+.bar4 {
+    bottom: 0;
+}
+.hamburger .bar1, .hamburger .bar4 {
+    transform-origin: 5%;
+}
+.checkbox:checked + label > .hamburger > .bar1{
+    transform: rotate(45deg);
+    height: 3px;
+    width: 42px;
+}
+.checkbox:checked + label > .hamburger > .bar3{
+    transform: rotate(45deg);
+    height: 3px;
+    background-color: transparent;
+}
+.checkbox:checked + label > .hamburger > .bar2{
+    transform: rotate(-45deg);
+    height: 3px;
+    background-color: transparent;
+}
+.checkbox:checked + label > .hamburger > .bar4{
+    transform: rotate(-45deg);
+    height: 3px;
+    width: 42px;
+}
+/*Section1*/
+section{
+    margin-top: 68px;
+}
+div.story-1-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+div.story-1-text{
+    margin-left: 150px;
+    width: 424px;
+}
+div.story-1-text span{
+    text-transform: uppercase;
+    color: #273D46;
+    opacity: 0.6;
+    font-size: 14px;
+}
+div.story-1-text p:first-of-type{
+    color: #273D46;
+    font-size: 36px;
+    text-align: left;
+    letter-spacing: -.5px;
+    padding-top: 30px;
+    height: 80px;
+}
+div.story-1-text p:last-of-type{
+    color: #273D46;
+    opacity: .8;
+    font-size: 24px;
+    text-align: left;
+    padding-top: 80px;
+    width: 340px;
+}
+div.story-1-img{
+    height: 573px;
+    width: 700px;
+    overflow: hidden;
+    padding: 20px 0 20px 20px;
+    background-color: #FFFFFF;
+    justify-items: end;
+}
