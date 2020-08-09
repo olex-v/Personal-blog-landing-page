@@ -420,3 +420,7 @@ div.contact form button{
     border: none;
     cursor: pointer;
 }
+/*media*/
+@media(max-width:760px){
+    
+}
