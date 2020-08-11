@@ -33,6 +33,7 @@ header h1{
     margin-right: -50%;
     transform: translateX(-50%);
     z-index: -1;
+    transition: all ease 1s;
 }
 header h2{
     text-align: center;
@@ -118,6 +119,7 @@ div.story-1-text{
     margin-left: 150px;
     width: 424px;
     font-stretch: ultra-expanded;
+    justify-self: center;
 }
 div.story-1-text span, div.story-2-text-start span,
 div.story-4-text span, div.story-4-part-2 p:last-of-type span{
@@ -175,7 +177,7 @@ div.contact form button:hover{
 }
 div.story-1-img{
     height: 573px;
-    width: 700px;
+    width: auto;
     overflow: hidden;
     padding: 20px 0 20px 20px;
     background-color: #FFFFFF;
@@ -226,7 +228,8 @@ div.story-1-end div.story-1-end-img{
     width: 333px;
     height: 208px;
     position: absolute;
-    right: 0;
+    right: -300px;
+    transition: all ease 1s;
 }
 div.story-1-end div.story-1-end-img img{
     width: inherit;
@@ -295,12 +298,12 @@ div.video-section-3{
 /*section4*/
 .story-4{
     position: relative;
-    max-width: 840px;
+    max-width: 1200px;
     margin: 50px auto 67px;
     display: grid;
 }
 div.story-4-part-1{
-    max-width: 900px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
@@ -324,7 +327,7 @@ div.story-4-part-2{
     background-color: #FFFFFF;
     position: relative;
     top:-54px;
-    justify-self: end;
+    justify-self: center;
 }
 div.story-4-part-2 p{
     margin: auto;
@@ -421,6 +424,82 @@ div.contact form button{
     cursor: pointer;
 }
 /*media*/
-@media(max-width:760px){
-    
+@media(max-width:1900px){
+    div.story-1-end div.story-1-end-img{
+        right: -100px;
+    }
+}
+@media(max-width:1700px){
+    div.story-1-end div.story-1-end-img{
+        right: 0;
+    }
+}
+@media(max-width:1600px){
+    div.story-1-img{
+        width: 700px;
+    }
+    div.story-1-text{
+        justify-self: start;
+    }  
+}
+@media(max-width:1400px){
+    div.story-1-end div.story-1-end-img{
+        right: 200px;
+    }
+}
+@media(max-width:1290px){
+    header h1{
+        font-size: 150px;
+    } 
+}
+@media(max-width:1250px){
+   nav{
+        margin-left: 50px;
+    }
+    div.story-1-group{
+        overflow: hidden;
+    }
+    .story-4{
+        max-width: 840px;
+    }
+    div.story-4-part-1{
+        max-width: 840px;
+    }
+    div.story-4-part-2{
+        justify-self: end;
+    }
+    div.story-2-end{
+        width: 800px;
+        top: 300px;
+    }  
+}
+@media(max-width:1200px){
+    div.story-1-end{
+        width: 800px;
+    }
+    div.story-1-group{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    div.story-1-img{
+        justify-self: center;
+    }
+    div.story-1-img{
+        padding-right: 20px;
+        width: auto;
+    }
+    div.story-1-end div.story-1-end-img{
+        right: -150px;
+    }
+    div.story-1-text{
+        width: 500px;
+    }
+     div.story-1-text p{
+        width: 400px;
+    } 
+}
+@media(max-width:1000px){
+    div.story-1-text{
+        margin-left: 50px;
+    }
 }
