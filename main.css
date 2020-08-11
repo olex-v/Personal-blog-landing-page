@@ -499,6 +499,9 @@ div.contact form button{
     } 
 }
 @media(max-width:1000px){
+    header h1{
+        font-size: 80px;
+    } 
     div.story-1-text{
         margin-left: 50px;
     }
